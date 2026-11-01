@@ -48,3 +48,25 @@ Anpassa tempot med handledare. IT Ticket Tracker kan avslutas till en avgränsad
 ## Koppling till fortsatta studier
 
 Fristående övningsprojekt i objektorientering, algoritmer och minneshantering. De är inte officiella KTH-laborationer. Exakt kursinnehåll och språk för CINTE HT2027 har inte verifierats i denna projektstart. C-simulering tränar inte alla moment inom elektronik, digitalteknik och processorarkitektur. Java använder referenser; C-pekare hör till C-projektet.
+
+## Startmaterial tillagt
+
+Börja med [START_HERE](START_HERE.md) och dess första fyra pass. Källfiler, byggfiler och tester finns nu; deras TODO markerar ditt arbete.
+Startmaterialet ersätter den tidigare manuella skapandet av projektstruktur i setup-uppgifterna. Issues #1–#6 är fortsatt din arbetsordning; stäng dem först när du själv har verifierat kriterierna.
+
+### Kunskapsmål från din tidigare kurslista
+
+Återbygg kunskap från algoritmer och datastrukturer (DD1338): grafrepresentation, traversering, prioritering och komplexitet.
+
+Kurskopplingen är tematisk utifrån din uppladdade lista över avklarade kurser; den är ingen bedömning av aktuella kursplaner.
+
+### Definition av klar uppgift
+
+- Acceptancekriterierna i aktuell issue är uppfyllda.
+- Relevanta uppgiftstester är aktiverade och passerar; minst ett eget gränsfall finns.
+- Du kan förklara koden och ändra ett litet krav utan att kopiera en lösning.
+- PR beskriver vad, varför, verifiering och lärdom; lärandeloggen är uppdaterad.
+
+### Veckovis avstämning
+
+Visa en fungerande liten del för handledare, välj 2–3 deluppgifter, notera hinder och justera nästa veckas omfattning. Matematik från din kurslista kan repeteras separat när huvudprojektet fungerar stabilt.

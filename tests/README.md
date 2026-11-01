@@ -1,5 +1,7 @@
 # Teststrategi
 
-Planera tester före implementation. Använd acceptanskriterierna i varje issue och inkludera normalfall, gränsfall och felvägar. Inga tester har implementerats eller körts i projektstarten.
+Kör mvn test. Ett grundtest är aktivt; @Disabled markerar ännu olösta övningar. Ta bort annotationen när du börjar motsvarande uppgift. Lägg till egna testfall. Före v1 ska inga obligatoriska uppgiftstester vara avstängda.
 
-Java-tester ska ligga i src/test/java och köras med Maven/JUnit när byggmiljön har skapats.
+Kontrollera normalfall, tomma fall, felvägar och gränser enligt issues #1–#6.
+Gör ett medvetet fel för att kontrollera att testerna upptäcker det, och återställ sedan felet.
+Grön CI för startkoden visar inte att slutprodukten är färdig.
