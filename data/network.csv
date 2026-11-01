@@ -1,0 +1,9 @@
+from,to,minutes
+Alfa,Beta,9
+Alfa,Gamma,2
+Gamma,Beta,2
+Beta,Delta,3
+Gamma,Epsilon,7
+Delta,Zeta,2
+Zeta,Eta,1
+Eta,Theta,2

@@ -1,37 +1,42 @@
 # Metro Route Planner
 
-En tunnelbaneinspirerad ruttplanerare i Java med grafer, Dijkstra och egna datastrukturer.
+Självständigt arbetsmaterial för repetition inför fortsatta IT-studier.
 
-**Status:** Planering och projektstruktur skapade. Implementation, byggkonfiguration och tester återstår; ingen fungerande applikation eller grön testkörning påstås ännu.
+**Status:** Startkod och uppgiftstester finns. Kärnfunktionerna är TODO-övningar, inte en färdig applikation.
 
 ## Börja här
 
-1. Läs [projektplanen](docs/PROJECT_PLAN.md).
-2. Öppna [första uppgiften](https://github.com/leoforsell/metro-route-planner/issues/1).
-3. Följ [branch- och PR-arbetsflödet](CONTRIBUTING.md).
-4. Anteckna vad du lär dig i [lärandeloggen](docs/LEARNING_LOG.md).
+1. Följ [startguiden med små arbetspass](docs/START_HERE.md).
+2. Läs [projektplanen och uppgifter #1–#6](docs/PROJECT_PLAN.md).
+3. Arbeta med branch och PR enligt [CONTRIBUTING](CONTRIBUTING.md).
+4. Använd [lärandeloggen](docs/LEARNING_LOG.md).
 
-## Grundversion
+## Verktyg och kommandon
 
-Konsolapp med 8–12 påhittade stationer och icke-negativa heltalsvikter i minuter. Beräkna väg och total restid. Inga riktiga SL-tidtabeller eller live-API:er.
+Installera JDK 17 och Maven 3.9.x. Kontrollera med `java -version`, `javac -version` och `mvn -version`.
+Byggfilen låser Java release 17, compiler-plugin 3.13.0, Surefire 3.5.2 och JUnit 5.11.4.
 
-## Verktyg
+```sh
+git clone https://github.com/leoforsell/metro-route-planner.git
+cd metro-route-planner
+mvn test
+mvn package
+java -cp target/classes se.leo.metro.Main
+```
 
-Java, Maven och JUnit 5. Återanvänd bygg- och testrutinerna från Java-kassan.
+## Vad du arbetar i
 
-Exakta versioner och fungerande bygg-, kör- och testkommandon dokumenteras när miljön sätts upp. Kopiera inte framtida kommandon som om projektet redan vore körbart.
+`src/main/java/se/leo/metro/` innehåller startprogram, modeller och metoder med TODO.
+`src/test/java/se/leo/metro/` innehåller ett aktivt grundtest och avstängda uppgiftstester.
+Aktivera relevanta tester när du börjar nästa uppgift.
 
-## Planerad struktur
-
-- `src/`: Maven-katalogerna main/java och test/java skapas i startuppgiften.
-- `tests/`: teststrategi; Java-testkoden ska senare ligga i src/test/java.
-- `docs/`: projektplan och lärandelogg.
-- `.github/`: mallar för issues och pull requests.
+CI bygger och testar startstrukturen. **Grön CI betyder inte att övningarna är färdiga.**
+Se [teststrategin](tests/README.md) för vad som ska aktiveras senare.
 
 ## Arbetsordning
 
-Mars–april 2027, efter Java-grundversionen. Ett projekt i taget; tidsfönstret är preliminärt. Se [planens sex uppgifter](docs/PROJECT_PLAN.md#uppgifter-i-ordning).
+Java-kassa → ruttplanerare → C-simulering. Ett huvudprojekt i taget.
+Perioderna i projektplanen är preliminära; anpassa dem med handledare efter vad du kan förklara och göra själv.
 
-## Utbildningssyfte
-
-Ett självständigt lärandeprojekt inför möjliga fortsatta IT-studier. Ingen officiell kurslösning och ingen garanti om framtida kursinnehåll.
+Materialet tränar programmering, algoritmer och minneshantering. Det är inte en officiell KTH-kurslösning.
+CINTE:s exakta upplägg HT2027 och eventuella tillgodoräknanden är inte verifierade här.
